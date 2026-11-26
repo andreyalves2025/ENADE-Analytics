@@ -61,11 +61,11 @@ O projeto segue o ciclo clássico de BI: coleta, ETL, Data Warehouse, análise e
 
 | Tabela | Conteúdo |
 |---|---|
-| `Fato_Respostas` | id_simulado, id_questao, id_dificuldade, id_turma, codigo_aluno (pseudônimo), resposta_aluno, acertou (0/1), resultado, carimbo_data_hora |
+| `Fato_Respostas` | id_simulado, id_questao, id_dificuldade, id_turma, codigo_aluno, resposta_aluno, acertou, resultado, carimbo_data_hora |
 | `Dim_Questao_Eixo` | id_questao, numero, tema, rotulo_questao, eixo_tematico, gabarito |
 | `Dim_Dificuldade` | id_dificuldade, nivel, criterio |
 | `Dim_Simulado` | id_simulado, simulado, data_aplicacao, semana_semestre |
-| `Dim_Turma` | id_turma, turma (GTI6), curso |
+| `Dim_Turma` | id_turma, turma, curso |
 
 <img width="1364" height="688" alt="Esquema estrela ENADE Analytics" src="https://github.com/user-attachments/assets/fc136b64-2827-4fb1-bc9a-b88f65e2cb05" />
 
