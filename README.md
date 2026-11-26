@@ -1,13 +1,14 @@
 # ENADE Analytics
 
 Repositório do Projeto Integrador ENADE Analytics, da disciplina de Business Intelligence (2026).
+
 Curso Superior de Tecnologia em Gestão da Informação, IFPR Campus Pinhais.
 
-**Equipe:** Andrey Dmitrievich Muniz Alves, Arthur Mendes de Vasconcelos, Leonardo Henrique Maximo e Maira Aparecida Michelon.
+Equipe: Andrey Dmitrievich Muniz Alves, Arthur Mendes de Vasconcelos, Leonardo Henrique Maximo e Maira Aparecida Michelon.
 
 ## Descrição do projeto
 
-O ENADE Analytics é uma solução de Business Intelligence, do dado bruto ao dashboard. Ele apoia a preparação dos concluintes do curso para o ENADE 2026. A partir de simulados respondidos por estudantes voluntários, o projeto organiza as respostas em um Data Warehouse e identifica, de forma agregada e anônima, as **forças e fraquezas da turma por eixo temático** do componente específico e por **nível de dificuldade**. O resultado é apresentado em um dashboard interativo no Power BI. O projeto integra conhecimentos de gestão de projetos, modelagem de dados, ETL, OLAP, mineração de dados e visualização.
+O ENADE Analytics é uma solução de Business Intelligence, do dado bruto ao dashboard. Ele apoia a preparação dos concluintes do curso para o ENADE 2026. A partir de simulados respondidos por estudantes voluntários, o projeto organiza as respostas em um Data Warehouse e identifica, de forma agregada e anônima, as forças e fraquezas da turma por eixo temático do componente específico e por nível de dificuldade. O resultado é apresentado em um dashboard interativo no Power BI. O projeto integra conhecimentos de gestão de projetos, modelagem de dados, ETL, OLAP, mineração de dados e visualização.
 
 ## Objetivo geral
 
