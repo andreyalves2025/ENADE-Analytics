@@ -2,11 +2,12 @@
 
 Repositório do Projeto Integrador ENADE Analytics, da disciplina de Business Intelligence (2026).
 Curso Superior de Tecnologia em Gestão da Informação, IFPR Campus Pinhais.
-**Equipe:** Andrey Dmitrievich Muniz Alves, Leonardo Henrique Maximo e Maira Aparecida Michelon.
+
+**Equipe:** Andrey Dmitrievich Muniz Alves, Arthur Mendes de Vasconcelos, Leonardo Henrique Maximo e Maira Aparecida Michelon.
 
 ## Descrição do projeto
 
-O ENADE Analytics é uma solução de Business Intelligence, do dado bruto ao dashboard. Ele apoia a preparação dos concluintes do curso para o ENADE 2026, prova aplicada em 29 de novembro. A partir de simulados respondidos por estudantes voluntários, o projeto organiza as respostas em um Data Warehouse (esquema estrela) e identifica, de forma agregada e anônima, as **forças e fraquezas da turma por eixo temático** do componente específico e por **nível de dificuldade**. O resultado é apresentado em um dashboard interativo no Power BI, pensado para que a coordenação o interprete sozinha, sem conhecimento técnico. O projeto integra conhecimentos de gestão de projetos, modelagem de dados, ETL, OLAP, mineração de dados e visualização. Ele segue a LGPD e se alinha aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU, especialmente os ODS 4 (Educação de qualidade), 9 (Indústria, inovação e infraestrutura) e 10 (Redução das desigualdades).
+O ENADE Analytics é uma solução de Business Intelligence, do dado bruto ao dashboard. Ele apoia a preparação dos concluintes do curso para o ENADE 2026. A partir de simulados respondidos por estudantes voluntários, o projeto organiza as respostas em um Data Warehouse e identifica, de forma agregada e anônima, as **forças e fraquezas da turma por eixo temático** do componente específico e por **nível de dificuldade**. O resultado é apresentado em um dashboard interativo no Power BI. O projeto integra conhecimentos de gestão de projetos, modelagem de dados, ETL, OLAP, mineração de dados e visualização.
 
 ## Objetivo geral
 
@@ -22,19 +23,6 @@ O público-alvo divide-se em dois grupos.
 
 - **Coordenação e professores do curso:** são quem usa o dashboard. Precisam de uma visão clara e rápida dos pontos fortes e fracos da turma para planejar revisões e ações de reforço.
 - **Estudantes concluintes:** participam voluntariamente dos simulados e são os beneficiários finais. Recebem reforço direcionado às suas lacunas, e seus dados pessoais ficam protegidos.
-
-A professora da disciplina atua como orientadora e avaliadora dos marcos.
-
-## Alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS)
-
-### ODS 4 – Educação de qualidade
-O ODS 4 busca assegurar uma educação inclusiva, equitativa e de qualidade. O projeto contribui ao dar à coordenação evidências objetivas sobre o aprendizado da turma. Assim, as revisões passam a ser planejadas a partir das lacunas reais, e não de suposições, o que fortalece a formação dos concluintes e a qualidade do curso.
-
-### ODS 9 – Indústria, inovação e infraestrutura
-O ODS 9 incentiva a inovação e o uso de tecnologia. O projeto leva a gestão baseada em dados (Data Warehouse, OLAP, mineração e dashboards) a um processo antes informal. Para isso, usa apenas ferramentas gratuitas, o que facilita reproduzir a solução em outros cursos e campi.
-
-### ODS 10 – Redução das desigualdades
-O ODS 10 busca reduzir desigualdades. Ao mostrar se as lacunas estão concentradas em poucos estudantes ou distribuídas por toda a turma, o dashboard ajuda a direcionar apoio a quem mais precisa, sem expor ninguém, já que só há visões agregadas.
 
 ## Escopo
 
@@ -66,8 +54,6 @@ Entre as principais entregas, destacam-se:
 - Questões de nível médio tiveram o menor acerto (40%).
 - **5 de 11** participantes atingiram a meta.
 
-> Piloto pequeno, com eixos de 1 a 3 questões: os números servem como linha de base, não como conclusão definitiva.
-
 ## Descrição técnica
 
 O projeto segue o ciclo clássico de BI: coleta, ETL, Data Warehouse, análise e visualização. A gestão é feita por marcos definidos no briefing da coordenação. O modelo de dados usa um esquema estrela com grão de **uma resposta de um aluno a uma questão em um simulado**.
@@ -94,29 +80,13 @@ O projeto segue o ciclo clássico de BI: coleta, ETL, Data Warehouse, análise e
 
 Todas as ferramentas são gratuitas.
 
-### Marcos e documentos
-
-| Marco | Semana | Entrega | Arquivo |
-|---|---|---|---|
-| M0 | 2 | Termo de abertura | `Marco0_Termo_Abertura_v2.docx` |
-| M1 | 4 | Matriz de requisitos + TCLE (LGPD) | `Marco1_Matriz_Requisitos_v2.docx`, `Marco1_Termo_Consentimento_LGPD.docx` |
-| – | – | Banco de questões | `Simulado_ENADE_v2.docx` |
-| – | 5–6 | Modelagem dimensional e ETL | `Semana5_Modelagem_Dimensional_v2.docx`, `Semana6_ETL_v2.docx` |
-| M2 | 8 | Modelo de dados (DW) | `Marco2_Modelo_DW_v2.docx`, `diagrama_esquema_estrela.png`, `ENADE_Analytics_Dados.xlsx` |
-| – | – | DW e OLAP | `Unidade3_DW_OLAP_v2.docx` |
-| M3 | 13 | Relatório de lacunas de conhecimento | *em desenvolvimento* |
-| M4 | 16 | Dashboard com storytelling | `Dashboard_GTI6.pbix` + PDF |
-| M5 | 18 | Integração de dados cadastrais | *em desenvolvimento* |
-
 ## Roteiro de execução do ENADE Analytics
 
 Antes de começar, instale o **Power BI Desktop** (gratuito, pela Microsoft Store ou pelo site da Microsoft). Ele roda apenas em Windows.
 
-1. **Baixar os arquivos.** Baixe `Dashboard_GTI6.pbix` e `ENADE_Analytics_Dados.xlsx` deste repositório e salve os dois na mesma pasta, por exemplo `C:\ENADE_Analytics`.
-2. **Conferir a extensão.** O .pbix é um arquivo compactado por dentro, e alguns navegadores o baixam como `.zip`. Nesse caso, **não extraia**: ative "Extensões de nomes de arquivos" no Explorador de Arquivos e renomeie `.zip` para `.pbix`.
-3. **Abrir o dashboard.** Dê dois cliques no `.pbix` ou, no Power BI Desktop, use Arquivo → Abrir. Os dados do piloto já estão no arquivo e as páginas abrem prontas.
-4. **Apontar para a base (só para atualizar dados).** Em Página Inicial → Transformar dados → Editar parâmetros, ajuste **CaminhoArquivo** para o local do `ENADE_Analytics_Dados.xlsx` (ex.: `C:\ENADE_Analytics\ENADE_Analytics_Dados.xlsx`) e clique em **Atualizar**.
-5. **Navegar pelas páginas.**
+1. **Baixar os arquivos.** Baixe [ENADE Analytics.zip](https://github.com/user-attachments/files/35482044/ENADE.Analytics.zip) deste repositório que contém o arquivo "ENADE Analytics.pbix" pronto para rodar no Power BI.
+2. **Abrir o dashboard.** Dê dois cliques no `.pbix` ou, no Power BI Desktop, use Arquivo → Abrir. Os dados do piloto já estão no arquivo e as páginas abrem prontas.
+3. **Navegar pelas páginas.**
    - Visão geral: indicadores da turma.
    - Forças e fraquezas: desempenho por eixo e dificuldade.
    - Os alunos: distribuição por faixas, sempre agregada.
@@ -124,11 +94,7 @@ Antes de começar, instale o **Power BI Desktop** (gratuito, pela Microsoft Stor
    - Próximos passos: recomendações.
 
    Use as segmentações (simulado, turma, eixo) para filtrar.
-6. **Incluir um novo simulado.**
-   - Cole as respostas exportadas do Forms na aba `Respostas_Forms` do `.xlsx`, com o novo `id_simulado` e a turma.
-   - Acrescente a linha na aba `Simulados` (e em `Turmas`, se for uma turma nova).
-   - Salve o `.xlsx` e clique em **Atualizar** no Power BI.
-7. **Sem Power BI?** Veja o **PDF** do dashboard disponível neste repositório.
+4. **Sem Power BI?** Veja o **PDF** do dashboard disponível neste repositório.
 
 ## LGPD e ética
 
