@@ -85,7 +85,7 @@ Todas as ferramentas são gratuitas.
 
 Antes de começar, instale o **Power BI Desktop** (gratuito, pela Microsoft Store ou pelo site da Microsoft). Ele roda apenas em Windows.
 
-1. **Baixar os arquivos.** Baixe [ENADE Analytics.zip](https://github.com/user-attachments/files/35482044/ENADE.Analytics.zip) deste repositório que contém o arquivo "ENADE Analytics.pbix" pronto para rodar no Power BI.
+1. **Baixar os arquivos.** Baixe [ENADE Analytics.zip](https://github.com/user-attachments/files/35489387/ENADE.Analytics.zip) deste repositório que contém o arquivo "ENADE Analytics.pbix" pronto para rodar no Power BI. Extraia o conteúdo.
 2. **Abrir o dashboard.** Dê dois cliques no `.pbix` ou, no Power BI Desktop, use Arquivo → Abrir. Os dados do piloto já estão no arquivo e as páginas abrem prontas.
 3. **Navegar pelas páginas.**
    - Visão geral: indicadores da turma.
